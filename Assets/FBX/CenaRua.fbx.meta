@@ -102,6 +102,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: FarolVermelho_MAT_EMISSIVO
     second: {fileID: 2100000, guid: 5e4aa855c784ece4a802ced633664298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: VidroQuebrado_TEXTURA
+    second: {fileID: 2100000, guid: 2564114a3f0f7b145a3583796799120c, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

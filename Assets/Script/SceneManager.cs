@@ -17,12 +17,13 @@ public class SceneManager : MonoBehaviour {
     void Start () {
        name = target.tag.ToString();
        
+       
 	}
 	
 	// Update is called once per frame
 	void Update () {
-       
-	}
+        txtTimer.text = timer.ToString();
+    }
 
     public void chamarAnim() {
         StartCoroutine("Anim");
@@ -47,6 +48,12 @@ public class SceneManager : MonoBehaviour {
         yield return new WaitForSeconds(1.0f);
         StartCoroutine(cronometro(timer));
 
+    }
+
+    IEnumerator cronometro(int _timer) {
+        timer--;
+        yield return new WaitForSeconds(_timer);
+        StartCoroutine(cronometro(timer));
     }
 
     
