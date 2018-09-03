@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/Quiz.unity
     guid: a7fd76a059333dd42bf828f9ec681d54
+  - enabled: 1
+    path: Assets/Scene/Fase2.unity
+    guid: 40d0f7b3678975548b180a366323f16d
   m_configObjects: {}

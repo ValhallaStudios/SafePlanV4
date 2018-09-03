@@ -24,7 +24,6 @@ public class game : MonoBehaviour {
         
         txtTimer.text = timer.ToString();
         timer--;
-        print("teste");
         yield return new WaitForSeconds(1.0f);
         StartCoroutine(cronometro(timer));
         if (timer == 0)
