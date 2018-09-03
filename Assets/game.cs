@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class game : MonoBehaviour {
     public int timer;
     public Text txtTimer;
@@ -26,5 +27,10 @@ public class game : MonoBehaviour {
         print("teste");
         yield return new WaitForSeconds(1.0f);
         StartCoroutine(cronometro(timer));
+        if (timer == 0)
+        {
+            Application.LoadLevel("Quiz");
+            StopCoroutine(cronometro(timer));
+        }
     }
 }
