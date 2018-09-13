@@ -90,6 +90,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Carro2_MAT1
+    second: {fileID: 2100000, guid: a5728f8703ab4474281a3fedc4f38903, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: FarolVemelho_MAT_EMISSIVO
     second: {fileID: 2100000, guid: 5e4aa855c784ece4a802ced633664298, type: 2}
   - first:

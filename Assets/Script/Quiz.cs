@@ -6,11 +6,16 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Quiz : MonoBehaviour {
+
     public List<string> alternativas;
     public List<Text> alternativasTexto;
     public List<Text> listaAcharRespostaCerta;
     public bool Acerto;
     public string Resposta;
+    public GameObject AcertouTitle;
+    public GameObject ErrouTitle;
+    public GameObject telaPreta;
+    public GameObject timer;
     public selecionar selecionarScript;
     int limite = 5;
     public GameObject pergunta;
@@ -46,34 +51,50 @@ public class Quiz : MonoBehaviour {
             AcharResposta();
         }
     }
-    void AcharResposta() {
-        if (listaAcharRespostaCerta[0].text == Resposta && selecionarScript.botoes[1] )
+    bool AcharResposta() {
+        if (listaAcharRespostaCerta[0].text == Resposta && selecionarScript.botoes[0] )
         {
             print("REPOSTA CERTA!! PARABENS");
-            Acerto = true;
+            return true;
         }
-        else if (listaAcharRespostaCerta[1].text == Resposta && selecionarScript.botoes[2])
+        else if (listaAcharRespostaCerta[1].text == Resposta && selecionarScript.botoes[1])
         {
             print("REPOSTA CERTA!! PARABENS");
-            Acerto = true;
+            return true;
         }
-        else if (listaAcharRespostaCerta[2].text == Resposta && selecionarScript.botoes[3])
+        else if (listaAcharRespostaCerta[2].text == Resposta && selecionarScript.botoes[2])
         {
             print("REPOSTA CERTA!! PARABENS");
-            Acerto = true;
+            return true;
         }
-        else if (listaAcharRespostaCerta[3].text == Resposta && selecionarScript.botoes[4])
+        else if (listaAcharRespostaCerta[3].text == Resposta && selecionarScript.botoes[3])
         {
             print("REPOSTA CERTA!! PARABENS");
-            Acerto = true;
+            return true;
         }
-        
+        return false;
+
 
 
 
     }
+    public void Mensagem() {
+        if (AcharResposta())
+        {
+            telaPreta.SetActive(true);
+            AcertouTitle.SetActive(true);
+            Destroy(timer);
+
+        }
+        else
+        {
+            telaPreta.SetActive(true);
+            ErrouTitle.SetActive(true);
+            Destroy(timer);
+        }
+    }
     public void Acertou() {
-        if (Acerto)
+        if (AcharResposta())
         {
             Application.LoadLevel("Fase2");
         }

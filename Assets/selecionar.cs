@@ -24,19 +24,13 @@ public class selecionar : MonoBehaviour {
             img[1].enabled = false;
             img[2].enabled = false;
             img[3].enabled = false;
-            botoes[1] = true;
-            
-        }
-        else
-        {
-            img[0].enabled = false;
-            img[1].enabled = false;
-            img[2].enabled = false;
-            img[3].enabled = false;
+            botoes[0] = true;
+            botoes[3] = false;
+            botoes[2] = false;
             botoes[1] = false;
-            
-            
+
         }
+       
         
        
 	}
@@ -48,18 +42,13 @@ public class selecionar : MonoBehaviour {
             img[0].enabled = false;
             img[2].enabled = false;
             img[3].enabled = false;
-            botoes[2] = true;
+            botoes[1] = true;
+            botoes[3] = false;
+            botoes[2] = false;
+            botoes[0] = false;
 
         }
-        else
-        {
-            img[0].enabled = false;
-            img[1].enabled = false;
-            img[2].enabled = false;
-            img[3].enabled = false;
-            botoes[2] = false;
-            
-        }
+       
         
 
     }
@@ -71,18 +60,13 @@ public class selecionar : MonoBehaviour {
             img[0].enabled = false;
             img[1].enabled = false;
             img[3].enabled = false;
-            botoes[3] = true;
-
-        }
-        else
-        {
-            img[0].enabled = false;
-            img[1].enabled = false;
-            img[2].enabled = false;
-            img[3].enabled = false;
+            botoes[2] = true;
             botoes[3] = false;
+            botoes[1] = false;
+            botoes[0] = false;
 
         }
+        
 
     }
     public void Botao4()
@@ -93,18 +77,13 @@ public class selecionar : MonoBehaviour {
             img[0].enabled = false;
             img[1].enabled = false;
             img[2].enabled = false;
-            botoes[4] = true;
+            botoes[3] = true;
+            botoes[2] = false;
+            botoes[1] = false;
+            botoes[0] = false;
 
         }
-        else
-        {
-            img[0].enabled = false;
-            img[1].enabled = false;
-            img[2].enabled = false;
-            img[3].enabled = false;
-            botoes[4] = false ;
-
-        }
+      
 
     }
 }

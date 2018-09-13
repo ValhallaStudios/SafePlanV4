@@ -55,6 +55,9 @@ public class SceneManager : MonoBehaviour {
         yield return new WaitForSeconds(_timer);
         StartCoroutine(cronometro(timer));
     }
+    public void FAQ() {
+        Application.LoadLevel("FAQ");
+    }
 
     
     }

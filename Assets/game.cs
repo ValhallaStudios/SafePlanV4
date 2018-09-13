@@ -32,4 +32,7 @@ public class game : MonoBehaviour {
             StopCoroutine(cronometro(timer));
         }
     }
+    public void Quiz() {
+        Application.LoadLevel("Quiz");
+    }
 }
