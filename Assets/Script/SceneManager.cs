@@ -58,6 +58,9 @@ public class SceneManager : MonoBehaviour {
     public void FAQ() {
         Application.LoadLevel("FAQ");
     }
+    public void BackFases() {
+        Application.LoadLevel("fases");
+    }
 
     
     }

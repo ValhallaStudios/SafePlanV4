@@ -53,12 +53,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\game.cs" />
      <Compile Include="Assets\Script\FAQ.cs" />
+     <Compile Include="Assets\Script\game.cs" />
      <Compile Include="Assets\Script\Quiz.cs" />
      <Compile Include="Assets\Script\SceneManager.cs" />
+     <Compile Include="Assets\Script\selecionar.cs" />
      <Compile Include="Assets\Script\TypeWriterEffect.cs" />
-     <Compile Include="Assets\selecionar.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultInitializationErrorHandler.cs" />
      <Compile Include="Assets\Vuforia\Scripts\DefaultTrackableEventHandler.cs" />
      <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
