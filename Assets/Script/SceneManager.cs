@@ -8,29 +8,31 @@ using UnityEngine.UI;
 public class SceneManager : MonoBehaviour {
 
     public Animator anima;
-    public string name;
     public GameObject target;
     public Text txtTimer;
+    public string name;
+    public GameObject somAmbiente;
     public  int timer;
 
     // Use this for initialization
     void Start () {
-       name = target.tag.ToString();
-       
-       
-	}
+        name = target.tag.ToString();
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        txtTimer.text = timer.ToString();
+        
     }
 
     public void chamarAnim() {
-        StartCoroutine("Anim");
+        StartCoroutine(Anim());
     }
 
     public void BackMenu() {
         Application.LoadLevel("menu");
+
     }
 
     public void BackGameMode()
@@ -44,6 +46,7 @@ public class SceneManager : MonoBehaviour {
         yield return new WaitForSeconds(0.45f);
         
         Application.LoadLevel(name);
+
 
         yield return new WaitForSeconds(1.0f);
         StartCoroutine(cronometro(timer));
@@ -60,6 +63,14 @@ public class SceneManager : MonoBehaviour {
     }
     public void BackFases() {
         Application.LoadLevel("fases");
+    }
+    public void DestroiSom() {
+        somAmbiente = GameObject.FindGameObjectWithTag("ambiente");
+        Destroy(somAmbiente);
+        
+    }
+    public void Video() {
+        Application.LoadLevel("Videos");
     }
 
     

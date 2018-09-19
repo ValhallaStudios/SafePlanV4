@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/UNITY/SafePlanV4/Build/PlanoSeguro.apk
+D:/SafePlanV4/Build/PlanoSeguro.apk
 SceneListBegin?
 Assets/Scene/menu.unity
 Assets/Scene/GameMode.unity
@@ -9,6 +9,7 @@ Assets/Scene/game.unity
 Assets/Scene/Quiz.unity
 Assets/Scene/Fase2.unity
 Assets/Scene/FAQ.unity
+Assets/Scene/Videos.unity
 SceneListEnd?
 c422dd62785a6d0afa870fbd111886ce Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 7b803eb2910e9b4cd5e521ae07b9f7d6 Unity.TextMeshPro.dll:TMPro.TMP_Dropdown
@@ -24,9 +25,9 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
-e6dfa6fc1a0ed27f94ce3efd813f7c17 Assembly-CSharp.dll:.Quiz
+707ecf7cea834aac9c79d1ee804e8b17 Assembly-CSharp.dll:.Quiz
 f6637497451c9a030c421de4a1ad5cdb Unity.TextMeshPro.dll:TMPro.TMP_ScrollbarEventHandler
-ea225315bd199cca5ed97a977e34547a Assembly-CSharp.dll:.SceneManager
+55309208ef66312ca19d1bef2521e357 Assembly-CSharp.dll:.SceneManager
 b14b4630cc47b6e9ea8a644551a6a8cc Unity.TextMeshPro.dll:TMPro.TMP_Text
 53cefe5d98cadefbab750835e70b89c0 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 486cd95c82d8305219c352c06b776e1f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
@@ -105,6 +106,7 @@ c7dd12c15208b0447e101f80038706df UnityEngine.Timeline.dll:UnityEngine.Timeline.A
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.GroupTrack
 0ddb2c46096a1e59e0dce07886ce4769 UnityEngine.Timeline.dll:UnityEngine.Timeline.PlayableTrack
 64f3a13c1277a7f1324321d93d0ec13b UnityEngine.Timeline.dll:UnityEngine.Timeline.TimelineAsset
+65800508c64d4cb142b0a39f8d433181 Assembly-CSharp.dll:.LoadScene
 66b3109aa5921cf800bec17926c6adba Unity.TextMeshPro.dll:TMPro.TMP_SubMeshUI
 201273fb4f889724fb090164b7d6c657 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 486cd95c82d8305219c352c06b776e1f UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
@@ -276,7 +278,7 @@ f351a53a5bb6578f76af7819b5eb8592 Vuforia.UnityExtensions.dll:Vuforia.VuforiaConf
 ad24de185ef9a605870b931cda4f181e Vuforia.UnityExtensions.dll:Vuforia.VuMarkBehaviour
 c31ff9acb65f7a15b5c6fd77c3314d83 Vuforia.UnityExtensions.dll:Vuforia.WireframeBehaviour
 486cd95c82d8305219c352c06b776e1f Vuforia.UnityExtensions.dll:Vuforia.WireframeTrackableEventHandler
-073f1df1f7e7ddb45d0e503f5c493f18 Assembly-CSharp.dll:.game
+79b80b71ae5e47da541025c434919227 Assembly-CSharp.dll:.game
 182e416670915c50a548c38c642db0d8 Vuforia.UnityExtensions.dll:Vuforia.AnchorBehaviour
 f35860350df72508419d9f9fcd288594 Vuforia.UnityExtensions.dll:Vuforia.AnchorInputListenerBehaviour
 182e416670915c50a548c38c642db0d8 Vuforia.UnityExtensions.dll:Vuforia.AnchorStageBehaviour

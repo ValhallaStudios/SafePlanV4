@@ -6,12 +6,18 @@ using UnityEngine.UI;
 
 public class game : MonoBehaviour {
     public int timer;
+    public AudioSource ambiente;
     public Text txtTimer;
+    public GameObject loadScene;
 	// Use this for initialization
 	void Start () {
         txtTimer.text = timer.ToString();
         StartCoroutine(cronometro(timer));
-	}
+        DontDestroyOnLoad(ambiente.gameObject);
+        loadScene = GameObject.FindGameObjectWithTag("load");
+        Destroy(loadScene);
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,5 +40,9 @@ public class game : MonoBehaviour {
     }
     public void Quiz() {
         Application.LoadLevel("Quiz");
+    }
+    public void Quiz2()
+    {
+        Application.LoadLevel("Quiz 2");
     }
 }

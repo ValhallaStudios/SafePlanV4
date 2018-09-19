@@ -19,11 +19,13 @@ public class Quiz : MonoBehaviour {
     public selecionar selecionarScript;
     int limite = 5;
     public GameObject pergunta;
+    public GameObject somAmbiente;
     public Button btnVerificar;
    
 	// Use this for initialization
 	void Start () {
-        
+        somAmbiente = GameObject.FindGameObjectWithTag("ambiente");
+        somAmbiente.GetComponent<AudioSource>().volume = 0.6f ;
     }
 	
 	// Update is called once per frame
@@ -81,6 +83,7 @@ public class Quiz : MonoBehaviour {
     public void Mensagem() {
         if (AcharResposta())
         {
+            DontDestroyOnLoad(somAmbiente);
             telaPreta.SetActive(true);
             AcertouTitle.SetActive(true);
             Destroy(timer);

@@ -9,6 +9,8 @@ TagManager:
   - fases
   - menu
   - P1
+  - ambiente
+  - load
   layers:
   - Default
   - TransparentFX

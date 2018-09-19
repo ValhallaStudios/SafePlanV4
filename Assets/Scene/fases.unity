@@ -693,9 +693,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anima: {fileID: 677708396}
-  name: 
   target: {fileID: 1422432394}
   txtTimer: {fileID: 0}
+  name: 
+  somAmbiente: {fileID: 0}
   timer: 60
 --- !u!4 &1089095211
 Transform:
@@ -925,7 +926,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1089095210}
-        m_MethodName: chamarAnim
+        m_MethodName: Video
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
