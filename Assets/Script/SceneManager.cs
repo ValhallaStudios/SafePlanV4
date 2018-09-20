@@ -14,6 +14,7 @@ public class SceneManager : MonoBehaviour {
     public GameObject somAmbiente;
     public GameObject somAmbienteCalmo;
     public  int timer;
+    public AudioSource somBotao;
 
     // Use this for initialization
     void Start () {
@@ -44,6 +45,7 @@ public class SceneManager : MonoBehaviour {
     }
     IEnumerator Anim()
     {
+        somBotao.Play();
         anima.SetBool("fade", true);
         
         yield return new WaitForSeconds(0.45f);
@@ -77,6 +79,8 @@ public class SceneManager : MonoBehaviour {
     public void Video() {
         Application.LoadLevel("Videos");
     }
-
+    public void SomBotao() {
+        somBotao.Play();
+    }
     
     }

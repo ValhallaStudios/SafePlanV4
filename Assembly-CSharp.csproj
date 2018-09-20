@@ -53,8 +53,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\animacaoCena.cs" />
-     <Compile Include="Assets\fade.cs" />
      <Compile Include="Assets\LoadScene.cs" />
      <Compile Include="Assets\Script\FAQ.cs" />
      <Compile Include="Assets\Script\game.cs" />

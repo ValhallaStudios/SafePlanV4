@@ -10,10 +10,12 @@ public class FAQ : MonoBehaviour {
 
 
     public void Escrever() {
-        Texto.SetActive(true);  
+        Texto.SetActive(true);
+        Texto2.SetActive(false);
     }
     public void Escrever2()
     {
+        Texto.SetActive(false);
         Texto2.SetActive(true);
     }
 
