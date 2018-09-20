@@ -11,6 +11,7 @@ TagManager:
   - P1
   - ambiente
   - load
+  - calmo
   layers:
   - Default
   - TransparentFX

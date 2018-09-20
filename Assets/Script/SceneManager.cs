@@ -12,11 +12,14 @@ public class SceneManager : MonoBehaviour {
     public Text txtTimer;
     public string name;
     public GameObject somAmbiente;
+    public GameObject somAmbienteCalmo;
     public  int timer;
 
     // Use this for initialization
     void Start () {
         name = target.tag.ToString();
+        somAmbiente = GameObject.FindGameObjectWithTag("calmo");
+        DontDestroyOnLoad(somAmbiente);
 
 
     }
@@ -66,8 +69,10 @@ public class SceneManager : MonoBehaviour {
     }
     public void DestroiSom() {
         somAmbiente = GameObject.FindGameObjectWithTag("ambiente");
+        somAmbienteCalmo = GameObject.FindGameObjectWithTag("calmo");
         Destroy(somAmbiente);
-        
+        Destroy(somAmbienteCalmo);
+
     }
     public void Video() {
         Application.LoadLevel("Videos");

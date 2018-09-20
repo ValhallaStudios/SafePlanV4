@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 10b1d866a5fe21c4dbc7bdc7cda04e07
+guid: fcd38c49406ae9b4fbf1858871b8c60a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -170,7 +170,17 @@ ModelImporter:
     7400000: Take 001
     9500000: //RootNode
     11100000: //RootNode
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FarolVerde_MAT_EMISSIVO
+    second: {fileID: 2100000, guid: 5e4aa855c784ece4a802ced633664298, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: FarolVermelho_MAT_EMISSIVO
+    second: {fileID: 2100000, guid: b0b3ed2668ce3b942bf0b4f18feff9c8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

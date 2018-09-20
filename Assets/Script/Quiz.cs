@@ -25,7 +25,7 @@ public class Quiz : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         somAmbiente = GameObject.FindGameObjectWithTag("ambiente");
-        somAmbiente.GetComponent<AudioSource>().volume = 0.6f ;
+        somAmbiente.GetComponent<AudioSource>().volume = 1.0f ;
     }
 	
 	// Update is called once per frame
